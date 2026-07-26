@@ -11,7 +11,7 @@ once GitHub Pages is enabled.
 ## Inventory
 
 - **[Parts](parts/)** — full parts list (the single URL all labels point to for
-  now). Data lives in `parts/parts.csv`.
+  now).
 
 ---
 
