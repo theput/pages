@@ -8,27 +8,36 @@ category; quantities in parentheses. Edit this file, commit, and the page update
 - 0.96" OLED (SSD1306) — 3 — I2C
 - 16x2 LCD (HD44780) — 2 — parallel / I2C backpack
 
+## Compute
+
+- Arduino MEga, Unow
+- Beagleboard
+- Seeed RP2040
+- Seeed Xiao esp32c3
+
+
 ## Sensors
 
-- BME280 — 4 — temp / humidity / pressure
-- HC-SR04 ultrasonic — 2 — distance
+
+- ... 
 
 ## Pi
 
-- Raspberry Pi 4 — 1
-- Arducam camera module — 2 — ribbon cables in bag
+- Pi 4 on the road
+- 2 Arducam camera module — 2 — ribbon cables in bag
 
-## Classic Arduino
 
-- Arduino Mega 2560 — 1
-- Arduino Uno R3 — 3
 
 ## Arduino Uno Q kit
 
-- Arduino Uno Q — 1
-- Modulino modules — 6 — various (keep the whole kit together)
+- 2 Arduino Uno Q — 
+- Modulino modules — 4
+    - distance, knob, buttons , movement
 
 ---
+
+
+
 
 *To add a part, add a line under the right category. Next step will give each
 category its own page/URL; for now this single list is where all labels point.*
