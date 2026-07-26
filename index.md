@@ -8,6 +8,11 @@ once GitHub Pages is enabled.
 - **[Milton the Radio](milton/)** — build diary and schematics for the Milton
   radio project.
 
+## Inventory
+
+- **[Parts](parts/)** — full parts list (the single URL all labels point to for
+  now). Data lives in `parts/parts.csv`.
+
 ---
 
 *To add a page: copy `_template/` to a new folder, write its `index.md`, and add

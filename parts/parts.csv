@@ -1,0 +1,11 @@
+Category,Item,Qty,Bin,Notes
+Displays,0.96" OLED (SSD1306),3,Displays,I2C
+Displays,16x2 LCD (HD44780),2,Displays,parallel/I2C backpack
+Sensors,BME280,4,Sensors,temp/humidity/pressure
+Sensors,HC-SR04 ultrasonic,2,Sensors,distance
+Pi,Raspberry Pi 4,1,Pi,
+Pi,Arducam camera module,2,Pi,ribbon cables in bag
+Classic Arduino,Arduino Mega 2560,1,Compute,
+Classic Arduino,Arduino Uno R3,3,Compute,
+Arduino Uno Q kit,Arduino Uno Q,1,Uno Q kit,keep whole kit together
+Arduino Uno Q kit,Modulino modules,6,Uno Q kit,various
