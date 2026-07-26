@@ -1,0 +1,20 @@
+# GitHub Pages configuration for theput/pages
+# Served at https://theput.github.io/pages/
+
+title: Constellation Pages
+description: Schematics, build diaries, writeups, and reference docs.
+
+# Theme — a GitHub-supported theme (no plugins needed).
+# Swap for any of: jekyll-theme-minimal, jekyll-theme-architect,
+# jekyll-theme-slate, jekyll-theme-cayman, jekyll-theme-hacker, etc.
+theme: jekyll-theme-cayman
+
+# Project-site paths (repo is served under /pages, not at the domain root).
+# These make the theme's CSS and links resolve correctly.
+url: https://theput.github.io
+baseurl: /pages
+
+# Jekyll ignores underscore-prefixed folders (so _template/ never publishes).
+# Just keep git/housekeeping files out of the built site.
+exclude:
+  - .gitignore

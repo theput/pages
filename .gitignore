@@ -2,3 +2,6 @@
 Thumbs.db
 *.swp
 *~
+
+# Internal operating notes — kept OUT of the public repo (local only).
+CLAUDE.md

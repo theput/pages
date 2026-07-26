@@ -10,12 +10,13 @@ radio, the goal, the vibe.)*
 
 ## Schematics
 
-Diagrams live in [`schematics/`](schematics/). Reference them inline as the
-build progresses, e.g.:
+Diagrams live in [`schematics/`](schematics/). Embed one with a relative path so
+it travels with the page:
 
-```
-![Power supply section](schematics/power-supply.png)
-```
+![Milton signal chain — block diagram](schematics/block-diagram.png)
+
+*Above: a placeholder block diagram, here just to show how an image renders.
+Replace it with the real schematic when it's drawn.*
 
 ## Build log
 
@@ -26,3 +27,9 @@ build progresses, e.g.:
 ## Parts
 
 *(Running list of components — value, source, notes.)*
+
+## References
+
+External links render as normal markdown links and open in the browser:
+
+- [ARRL Technical Information Service — reference (PDF)](https://www.arrl.org/files/file/Technology/tis/info/pdf/0003037.pdf)
