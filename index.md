@@ -13,6 +13,7 @@ once GitHub Pages is enabled.
 - **[Parts](parts/)** — full parts list (the single URL all labels point to for
   now).
 - **[Sealed IC blister packs](parts/sealed-blister-packs/)** — the sealed-pack bin, generated from the surplus-IC inventory.
+- **[Op-amps & analog chips](parts/op-amps-analog/)** — the working op-amp/analog IC bin (~483 chips, 88 part numbers).
 
 ## Preservation
 

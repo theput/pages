@@ -69,3 +69,4 @@ category its own page/URL; for now this single list is where all labels point.*
 Generated from `engineering/component-inventory.csv` — do not hand-edit:
 
 - [Sealed IC blister packs](sealed-blister-packs/) — 24 sealed vintage retail packs.
+- [Op-amps & analog chips](op-amps-analog/) — the working op-amp/analog IC bin.
