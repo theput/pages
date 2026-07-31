@@ -12,6 +12,7 @@ once GitHub Pages is enabled.
 
 - **[Parts](parts/)** — full parts list (the single URL all labels point to for
   now).
+- **[Sealed IC blister packs](parts/sealed-blister-packs/)** — the sealed-pack bin, generated from the surplus-IC inventory.
 
 ## Preservation
 
