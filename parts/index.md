@@ -70,3 +70,4 @@ Generated from `engineering/component-inventory.csv` — do not hand-edit:
 
 - [Sealed IC blister packs](sealed-blister-packs/) — 24 sealed vintage retail packs.
 - [Op-amps & analog chips](op-amps-analog/) — the working op-amp/analog IC bin.
+- [Transistors](transistors/) — the discrete transistor bin (5 function buckets).

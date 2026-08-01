@@ -14,6 +14,7 @@ once GitHub Pages is enabled.
   now).
 - **[Sealed IC blister packs](parts/sealed-blister-packs/)** — the sealed-pack bin, generated from the surplus-IC inventory.
 - **[Op-amps & analog chips](parts/op-amps-analog/)** — the working op-amp/analog IC bin.
+- **[Transistors](parts/transistors/)** — the discrete transistor bin (5 function buckets + CA3018 array).
 
 ## Preservation
 
