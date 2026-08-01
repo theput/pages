@@ -7,7 +7,7 @@
 *A special surplus stash inherited from Bill's father -- the source of parts for many past builds. Deliberately kept INTACT as one collection rather than distributed into the other bins, even where it duplicates categories stocked elsewhere. Logged in place; each part carries its normal functional Bin but this one Storage Location so the whole stash stays together and findable.*
 
 **Where:** Dad's parts stash (kept as-is, its own container).  
-**Contents:** 80 pcs (rough) · 20 part numbers.
+**Contents:** 82 pcs (rough) · 22 part numbers.
 
 > Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-01.
 
@@ -23,6 +23,7 @@
 ## Analog / power / other
 
 - [ ] **2240CP** — XR-2240-type programmable timer/counter (timebase oscillator + 8-bit programmable binary counter) — ×1
+- [ ] **Clairex Photomod** — a photoconductive optocoupler / photomodule: an incandescent lamp optically coupled to a CdS photocell in one sealed package — ×1 · *lamp + cell*
 
 ## Unidentified
 
@@ -60,6 +61,7 @@
 
 - [ ] **IC & transistor sockets + DIP pin straightener** — Unlabeled drawer of build hardware: assorted DIP IC sockets (8/14-pin, including machined-pin), round transistor sockets (TO-5/TO-18), some larger black sockets, and a pink DIP pin-straightener tool — ×assorted (a drawerful)
 - [ ] **Heat sinks + thermal compound** — HEAT SINKS drawer (as labeled): assorted clip-on star/finned TO-5/TO-18 heat sinks, a TO-220 heatsink with a power device still mounted, and a tube of Radio Shack heat-sink compound (silicone/zinc-oxide thermal grease) — ×assorted (a drawerful)
+- [ ] **1/4-inch jacks + misc** — 1/4-inch (6.35 mm) phone jacks and assorted misc hardware — ×assorted
 
 ---
 *Full detail (date codes, notes, confidence) in the master `component-inventory.csv`. This page is the QR target for the bin.*
