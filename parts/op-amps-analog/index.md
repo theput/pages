@@ -3,7 +3,7 @@
 *The working op-amp and analog IC collection -- op-amps, comparators, timers, PLLs, OTAs, data converters, voltage regulators, filters, and specialty analog parts. Through-hole chips sit on black foam cut to fit the bin; SMD and tubed parts are bagged inside. Mixed CMOS -- observe ESD care.*
 
 **Where:** 6.5qt bin -- through-hole on cut-to-fit black foam; SMD/tubed parts bagged inside.  
-**Contents:** 558 chips (rough count) · 92 part numbers.
+**Contents:** 559 chips (rough count) · 93 part numbers.
 
 > Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-01.
 
@@ -103,6 +103,7 @@
 - [ ] **MF10ACN** — Universal dual switched-capacitor active filter, A grade (tighter specs / wider temperature range than the CC grade) — ×4 · *National Semiconductor*
 - [ ] **TLC555C** — CMOS timer (low-power 555), surface-mount — ×~3 · *Texas Instruments) [SMD]*
 - [ ] **LMC555CM** — CMOS timer (low-power 555), surface-mount — ×~2 · *National Semiconductor) [SMD]*
+- [ ] **LM293** — dual differential comparator (LM193/293/393 family, industrial temp grade), open-collector outputs, 8-pin DIP — ×1
 
 ## Unidentified
 
