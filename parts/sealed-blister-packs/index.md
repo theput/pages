@@ -5,7 +5,7 @@
 **Where:** 6.5qt bin box -- vintage Radio Shack bag inside.  
 **Contents:** 24 packs · 15 part numbers.
 
-> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-07-31.
+> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-01.
 
 ## Logic -- CMOS / TTL
 
@@ -27,12 +27,18 @@
 - [ ] **555 TIMER** — Single timer (astable/monostable), the classic 555 — ×2 · *Radio Shack sealed, Cat 276-1723*
 - [ ] **7805 VOLTAGE REGULATOR** — +5V 1A fixed positive linear voltage regulator (78xx series) — ×1 · *Radio Shack sealed, Cat 276-1770A*
 
-## Discrete transistors
+## Transistors -- small-signal (general)
 
-- [ ] **Unijunction transistor** — unijunction transistor (RS 276-2029, classic 2N2646-type) — ×3 · *Archer sealed, Cat 276-2029*  `[DISCRETE]`  ⚑ **earmarked** — see inventory notes
-- [ ] **PNP silicon transistor** — PNP silicon replacement transistor (RS 276-2025) — ×1 · *Archer sealed, Cat 276-2025*  `[DISCRETE]`
-- [ ] **NPN silicon transistor** — NPN silicon replacement transistor (RS 276-2030) — ×1 · *Archer sealed, Cat 276-2030*  `[DISCRETE]`
-- [ ] **MPS-A06 NPN transistor** — NPN general-purpose transistor (RS 276-2059) — ×2 · *Archer sealed, Cat 276-2059*  `[DISCRETE]`
+- [ ] **NPN silicon transistor** — NPN silicon replacement transistor (RS 276-2030) — ×1 · *Archer sealed, Cat 276-2030*  `NPN`
+- [ ] **MPS-A06 NPN transistor** — NPN general-purpose transistor (RS 276-2059) — ×2 · *Archer sealed, Cat 276-2059*  `NPN`
+
+## Transistors -- power
+
+- [ ] **PNP silicon transistor** — PNP silicon replacement transistor (RS 276-2025) — ×1 · *Archer sealed, Cat 276-2025*  `PNP`
+
+## Transistors -- specialty / UJT / house-numbered
+
+- [ ] **Unijunction transistor** — unijunction transistor (RS 276-2029, classic 2N2646-type) — ×3 · *Archer sealed, Cat 276-2029*  `UJT`  ⚑ **earmarked** — see inventory notes
 
 ---
 *Full detail (date codes, notes, confidence) in the master `component-inventory.csv`. This page is the QR target for the bin.*

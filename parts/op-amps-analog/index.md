@@ -3,16 +3,16 @@
 *The working op-amp and analog IC collection -- op-amps, comparators, timers, PLLs, OTAs, data converters, voltage regulators, filters, and specialty analog parts. Through-hole chips sit on black foam cut to fit the bin; SMD and tubed parts are bagged inside. Mixed CMOS -- observe ESD care.*
 
 **Where:** 6.5qt bin -- through-hole on cut-to-fit black foam; SMD/tubed parts bagged inside.  
-**Contents:** 483 chips (rough count) · 88 part numbers.
+**Contents:** 558 chips (rough count) · 92 part numbers.
 
-> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-07-31.
+> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-01.
 
 ## Op-amps
 
 - [ ] **RC3403ADB2** — Ground-Sensing Quad Operational Amplifier — ×1 · *Raytheon*
 - [ ] **LM10CLN** — Operational Amplifier + Voltage Reference (low-voltage precision analog) — ×1 · *National Semiconductor*
 - [ ] **RC4156DB** — High-Performance Quad Operational Amplifier — ×2 · *Raytheon*
-- [ ] **ICL7642ECPD** — Quad programmable micropower operational amplifier — ×~76 · *Maxim / Intersil*
+- [ ] **ICL7642ECPD** — Quad programmable micropower operational amplifier — ×~90 · *Maxim / Intersil*
 - [ ] **ICL7611DCPA** — CMOS Programmable Micropower Operational Amplifier — ×2 · *Intersil*
 - [ ] **RAY 8748, part number reads "RLAPNPS"** — Quad General-Purpose Operational Amplifier ("Quad 741"), same manufacturer/package family as other Raytheon op-amps in this lot, but exact marking distorted by glare/angle — ×1 · *Raytheon*
 - [ ] **LM308AH** — Low-power precision operational amplifier — ×3 · *National Semiconductor*
@@ -24,7 +24,7 @@
 - [ ] **ICL7611CBA** — CMOS Programmable Micropower Operational Amplifier, surface-mount variant — ×9 · *Intersil*
 - [ ] **TLC251CP** — LinCMOS programmable low-power operational amplifier — ×1 · *Texas Instruments*
 - [ ] **uA741TC** — Classic general-purpose operational amplifier — ×1 · *Fairchild*
-- [ ] **LM324N** — Quad general-purpose operational amplifier — ×~31 · *National Semiconductor*
+- [ ] **LM324N** — Quad general-purpose operational amplifier — ×~34 · *National Semiconductor*
 - [ ] **LP324N** — Micropower quad operational amplifier — ×~8 · *National Semiconductor*
 - [ ] **OP27** — Low-noise precision operational amplifier — ×3 · *PMI / Precision Monolithics*
 - [ ] **LM124J/883B** — Quad operational amplifier, military/883B screened, ceramic package — ×~7
@@ -54,6 +54,9 @@
 - [ ] **LM308AM [SMD]** — Low-power precision operational amplifier, surface-mount — ×~3
 - [ ] **LM4250M** — Programmable micropower operational amplifier, surface-mount — ×~5 · *National Semiconductor) [SMD]*
 - [ ] **LM324M** — Quad general-purpose operational amplifier, surface-mount — ×~4 · *National Semiconductor) [SMD]*
+- [ ] **NE5532AP** — Dual low-noise (audio) operational amplifier — ×25 · *Texas Instruments*
+- [ ] **OP275GPZ** — Dual bipolar+JFET (Butler input) audio operational amplifier — ×2 · *Analog Devices*
+- [ ] **LM1453** — Marked 'LM1453' (Bill's read of a worn 8-pin DIP) — ×1 · *as read) -- presumed LM1458*
 
 ## Analog / power / other
 
@@ -73,7 +76,7 @@
 - [ ] **LM556CN** — Dual timer (two 555s in one package) — ×~5 · *National Semiconductor*
 - [ ] **ICL7660CPA** — Switched-capacitor voltage converter / charge pump (voltage inverter) — ×0-7 (unverified) · *Maxim) -- EXISTENCE DOUBTFUL*
 - [ ] **LM710CN** — Voltage comparator — ×2 · *National Semiconductor*
-- [ ] **LM3046N** — Five-transistor array (matched NPN transistors) — ×~14 · *National Semiconductor*
+- [ ] **LM3046N** — Five-transistor array (matched NPN transistors) — ×~41 · *National Semiconductor*
 - [ ] **LM339AN** — Quad differential comparator — ×~2 · *National Semiconductor*
 - [ ] **uA339APC** — Quad differential voltage comparator (LM339 equivalent) — ×~2 · *Fairchild*
 - [ ] **LM13600N** — Dual operational transconductance amplifier (OTA) with linearizing diodes and buffers — ×~2 · *National Semiconductor*
@@ -100,6 +103,10 @@
 - [ ] **MF10ACN** — Universal dual switched-capacitor active filter, A grade (tighter specs / wider temperature range than the CC grade) — ×4 · *National Semiconductor*
 - [ ] **TLC555C** — CMOS timer (low-power 555), surface-mount — ×~3 · *Texas Instruments) [SMD]*
 - [ ] **LMC555CM** — CMOS timer (low-power 555), surface-mount — ×~2 · *National Semiconductor) [SMD]*
+
+## Unidentified
+
+- [ ] **LB1026 AB -- WE0186** — Unidentified IC — ×3 · *gold-leg*
 
 ---
 *Full detail (date codes, notes, confidence) in the master `component-inventory.csv`. This page is the QR target for the bin.*
