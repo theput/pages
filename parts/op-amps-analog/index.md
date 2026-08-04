@@ -3,9 +3,9 @@
 *The working op-amp and analog IC collection -- op-amps, comparators, timers, PLLs, OTAs, data converters, voltage regulators, filters, and specialty analog parts. Through-hole chips sit on black foam cut to fit the bin; SMD and tubed parts are bagged inside. Mixed CMOS -- observe ESD care.*
 
 **Where:** 6.5qt bin -- through-hole on cut-to-fit black foam; SMD/tubed parts bagged inside.  
-**Contents:** 564 chips (rough count) · 94 part numbers.
+**Contents:** 567 chips (rough count) · 95 part numbers.
 
-> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-03.
+> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-04.
 
 ## Op-amps
 
@@ -105,6 +105,7 @@
 - [ ] **LMC555CM** — CMOS timer (low-power 555), surface-mount — ×~2 · *National Semiconductor) [SMD]*
 - [ ] **LM293** — dual differential comparator (LM193/293/393 family, industrial temp grade), open-collector outputs, 8-pin DIP — ×1
 - [ ] **CA3028A** — differential/cascode amplifier; RF/IF amp, mixer, oscillator/limiter to ~120 MHz — ×5 · *RCA*
+- [ ] **ICL8013** — Intersil ICL8013 — 1 MHz four-quadrant analog multiplier; analog multiply/divide, modulation/mixing (AM), RMS-to-DC conversion, frequency doubling, phase detection — ×3 · *Intersil) — box hand-labeled 'INTERSIL 8013'; cans date-coded 7630*
 
 ## Unidentified
 

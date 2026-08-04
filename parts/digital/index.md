@@ -3,9 +3,9 @@
 *The digital bin: microprocessor/computer chips (6502 family, SRAM/DRAM, EPROMs, peripheral drivers) and general-purpose CMOS/TTL logic (4000-series, 74HC). Programmed / DO-NOT-ERASE ROM sets are kept separately in their own tubes, not here.*
 
 **Where:** digital bin.  
-**Contents:** 156 chips (rough) · 47 part numbers.
+**Contents:** 161 chips (rough) · 48 part numbers.
 
-> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-03.
+> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-04.
 
 ## Digital / computer
 
@@ -59,6 +59,7 @@
 - [ ] **MC14068** — 8-input NAND/AND gate (4000-series CMOS) — ×1 (count unconfirmed) · *Motorola*
 - [ ] **MC14071** — Quad 2-input OR gate (4000-series CMOS) — ×1 (count unconfirmed) · *Motorola*
 - [ ] **DM7408N** — Quad 2-input AND gate (standard bipolar TTL, 7408) — ×1 · *National Semiconductor*
+- [ ] **CD74HCT14E** — Texas Instruments CD74HCT14E — hex inverting Schmitt-trigger buffer, 14-pin DIP; HCT = TTL-level inputs — ×5 · *TI); lot 48A0L9M G4*  ⚑ **earmarked** — see inventory notes
 
 ---
 *Full detail (date codes, notes, confidence) in the master `component-inventory.csv`. This page is the QR target for the bin.*
