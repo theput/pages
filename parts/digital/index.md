@@ -5,7 +5,7 @@
 **Where:** digital bin.  
 **Contents:** 156 chips (rough) · 47 part numbers.
 
-> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-01.
+> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-03.
 
 ## Digital / computer
 

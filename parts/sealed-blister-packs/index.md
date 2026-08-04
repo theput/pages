@@ -5,7 +5,7 @@
 **Where:** 6.5qt bin box -- vintage Radio Shack bag inside.  
 **Contents:** 52 packs · 19 part numbers.
 
-> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-01.
+> Generated from `engineering/component-inventory.csv` — **do not edit by hand.** Edit the CSV and rerun `engineering/gen-bin-pages.py`. Last generated 2026-08-03.
 
 ## Logic -- CMOS / TTL
 
