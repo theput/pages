@@ -1,4 +1,4 @@
-# xformer1001 — step-up input transformer (~1 : 6.5), larger, BLUE
+# xformer1001 — step-up input transformer, 1 : 6.24, larger, BLUE
 
 *Characterised 2026-09-12 on the AD3 (WaveForms Impedance Analyzer). From the SMALL AUDIO TRANSFORMERS batch.*
 
@@ -59,9 +59,18 @@ nominal, or a higher load than 47 kΩ. From a 150 Ω source it is nearly flat.
   output. xformer1000 (the 1:1) is that part.
 
 
+## Turns ratio — scope check (2026-09-12)
+
+Driving the 29 Ω side through the 1 kΩ at 1 kHz, high side open: **146.22 mV p-p across the primary,
+912 mV p-p across the secondary → n = 6.24**, impedance ratio 38.9. Sits just under the 6.53 upper
+bound from the loaded plateau, as it should — the difference is the core-loss shunt, which works out
+to ~13 kΩ on the primary side (47 kΩ / 6.24² = 1207 Ω pure; measured plateau 1103 Ω). Two methods
+agreeing within 5 % on a bare AD3 is a solid identification: **~600 Ω : 23 kΩ**, i.e. the 600 : 25k
+line-to-grid part within normal spread (or a 500 : 20k — same ratio).
+
+
 ## Still to measure
 
-- **Turns ratio on the scope** (1 kHz, high side open) — independent check on n ≈ 6.5.
 - **Unloaded sweep** of the 29 Ω side, for the true magnetising impedance.
 - **In-phase lead pair** — mark it.
 - **Count** in the batch.
