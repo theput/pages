@@ -5,6 +5,7 @@ project: RockMite 40m
 date: 2026-10-21
 page: 1
 summary: The RockMite output stage drawn out, with the scope method for power out.
+next_note: /lab/rockmite-40m/tr-switching.html
 ---
 
 Component values here are my placeholders. The real ones go in once I've checked them against the schematic.
