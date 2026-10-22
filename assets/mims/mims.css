@@ -1,0 +1,258 @@
+/* mims.css — the notebook page.  Cream quad paper, felt-tip lettering, a right-hand
+   annotation column, page number bottom right.  Pairs with _layouts/notebook.html.
+   One square of the paper = 20px; the figure SVGs use the same unit so their grid
+   lines up with the page's when the sheet's padding is a multiple of 20px.           */
+
+@font-face {
+  font-family: "MimsHand";
+  src: url("MimsHand.woff2") format("woff2"), url("MimsHand.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --unit: 20px;
+  --ink: #1c1c1c;
+  --paper: #fbfaf4;
+  --grid: rgba(110, 165, 205, 0.42);
+  --desk: #e6e1d3;
+  --hand: "MimsHand", "Patrick Hand", "Comic Sans MS", cursive;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --margin-w: 240px;   /* 12 squares */
+}
+
+html { background: var(--desk); }
+
+body {
+  margin: 0;
+  padding: 24px 12px 48px;
+  color: var(--ink);
+  font-family: var(--hand);
+  font-size: 19px;
+  line-height: 30px;            /* 1.5 squares */
+  text-transform: uppercase;    /* Mims letters everything in caps; the font does the rest */
+  font-feature-settings: "calt" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- the sheet of paper ------------------------------------------------ */
+.sheet {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 1080px;            /* 54 squares */
+  margin: 0 auto;
+  padding: 60px 40px 80px 40px; /* multiples of one square, so figures line up */
+  padding-right: calc(var(--margin-w) + 80px);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: var(--unit) var(--unit);
+  background-position: 0 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 12px 40px rgba(0,0,0,.12);
+}
+
+/* a faint punched-margin line, like a lab book */
+.sheet::before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 10px;
+  border-right: 1px solid rgba(0,0,0,.06);
+}
+
+/* ---------- lettering ---------------------------------------------------------- */
+h1, h2, h3 {
+  font-weight: normal;
+  letter-spacing: .02em;
+  margin: 0;
+}
+h1 {
+  font-size: 34px;
+  line-height: 40px;
+  margin-bottom: 40px;
+  display: block;
+  width: fit-content;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+  transform: rotate(-0.35deg);
+  transform-origin: left bottom;
+}
+h2 {
+  font-size: 26px;
+  line-height: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: inline-block;
+  clear: both;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  transform: rotate(-0.25deg);
+  transform-origin: left bottom;
+}
+h2 + * { clear: both; }
+h3 {
+  font-size: 21px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+p { margin: 0 0 20px; }
+strong { font-weight: normal; text-decoration: underline; text-underline-offset: 4px; }
+em { font-style: normal; letter-spacing: .08em; }
+a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+a:hover { background: rgba(255, 230, 120, .55); }
+
+/* the hand doesn't do small caps or kerning tricks; sub/superscripts just shrink */
+sub, sup { font-size: 70%; line-height: 0; }
+
+/* ---------- header line ------------------------------------------------------- */
+.nb-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  opacity: .8;
+}
+.nb-head a { text-decoration: none; }
+.nb-head a:hover { text-decoration: underline; }
+
+/* ---------- annotation column -------------------------------------------------- */
+.margin, aside {
+  float: right;
+  clear: right;
+  width: var(--margin-w);
+  margin-right: calc(-1 * var(--margin-w) - 40px);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;           /* one square */
+  transform: rotate(0.3deg);
+}
+.margin p:last-child, aside p:last-child { margin-bottom: 0; }
+
+/* ---------- figures ----------------------------------------------------------- */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+figure { margin: 20px 0; }
+figcaption { font-size: 16px; line-height: 20px; margin-top: 0; }
+.figure { margin: 20px 0 20px; }
+.figure img { margin: 0; }
+
+/* ---------- lists, rules, quotes, tables, code -------------------------------- */
+ul, ol { margin: 0 0 20px; padding-left: 30px; }
+li { margin: 0; }
+ul { list-style: none; padding-left: 20px; }
+ul li::before { content: "- "; margin-left: -20px; }
+
+hr {
+  border: 0;
+  border-top: 2px solid var(--ink);
+  margin: 30px 0;
+  clear: both;
+  transform: rotate(-0.2deg);
+}
+
+blockquote {
+  margin: 0 0 20px;
+  padding: 10px 20px;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  transform: rotate(-0.2deg);
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+table {
+  border-collapse: collapse;
+  margin: 0 0 20px;
+  font-size: 17px;
+  line-height: 20px;
+}
+th, td {
+  text-align: left;
+  padding: 10px 14px;
+  border: 1.5px solid var(--ink);
+  vertical-align: top;
+}
+th { text-decoration: underline; text-underline-offset: 4px; font-weight: normal; }
+
+code, pre {
+  font-family: var(--mono);
+  text-transform: none;
+  font-size: 14px;
+}
+pre {
+  line-height: 20px;
+  padding: 10px 14px;
+  margin: 0 0 20px;
+  background: rgba(255,255,255,.55);
+  border: 1.5px dashed rgba(0,0,0,.35);
+  overflow-x: auto;
+}
+
+.foot, .footnotes {
+  clear: both;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 40px;
+}
+.footnotes ol { padding-left: 24px; }
+
+/* ---------- page number ------------------------------------------------------- */
+.pageno {
+  position: absolute;
+  right: 40px;
+  bottom: 24px;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+/* ---------- nav between notes ------------------------------------------------- */
+.nb-nav {
+  clear: both;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 2px solid var(--ink);
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* ---------- lab index ---------------------------------------------------------- */
+.nb-index { list-style: none; padding: 0; }
+.nb-index li::before { content: ""; }
+.nb-index li { margin-bottom: 10px; }
+.nb-index .when { opacity: .7; font-size: 16px; margin-left: 10px; }
+
+/* ---------- narrow screens: margin notes fall inline ---------------------------- */
+@media (max-width: 900px) {
+  body { padding: 0; font-size: 18px; }
+  .sheet { padding: 40px 20px 60px 20px; box-shadow: none; }
+  .margin, aside {
+    float: none;
+    width: auto;
+    margin: 0 0 20px;
+    padding-left: 14px;
+    border-left: 2px solid var(--ink);
+    transform: none;
+  }
+  .pageno { right: 20px; }
+}
+
+@media print {
+  html, body { background: #fff; padding: 0; }
+  .sheet { box-shadow: none; max-width: none; }
+  .nb-nav { display: none; }
+}

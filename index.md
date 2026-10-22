@@ -7,6 +7,17 @@ once GitHub Pages is enabled.
 
 - **[Milton the Radio](milton/)** — build diary and schematics for the Milton
   radio project.
+- **[Milling a PCB on a Makera Carvera](carvera-pcb/)** — build diary of the
+  first board designed, milled, and brought up on the Carvera: why we wrote our
+  own CAM tool, why every failure was silent, and why copper clearance has a
+  *ceiling*. Includes [`claudecam.py`](carvera-pcb/claudecam.py) (MIT) and the
+  [`carvera-pcb` skill file](carvera-pcb/carvera-pcb-SKILL.md).
+
+## Lab notes
+
+- **[Lab notes](lab/)** — build notes and experiment journals as notebook
+  pages: quad paper, hand lettering, figures on the grid. First page:
+  [RockMite 40m — PA + low pass filter](lab/rockmite-40m/pa-lpf).
 
 ## Inventory
 
