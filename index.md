@@ -13,6 +13,12 @@ once GitHub Pages is enabled.
   *ceiling*. Includes [`claudecam.py`](carvera-pcb/claudecam.py) (MIT) and the
   [`carvera-pcb` skill file](carvera-pcb/carvera-pcb-SKILL.md).
 
+## Lab notes
+
+- **[Lab notes](lab/)** — build notes and experiment journals as notebook
+  pages: quad paper, hand lettering, figures on the grid. First page:
+  [RockMite 40m — PA + low pass filter](lab/rockmite-40m/pa-lpf).
+
 ## Inventory
 
 - **[Parts](parts/)** — full parts list (the single URL all labels point to for

@@ -22,6 +22,9 @@ fi
 # Clear stray lock files (Cowork sandbox leftovers) so git doesn't block.
 find .git -name "*.lock" -delete 2>/dev/null || true
 
+# Regenerate Mims-style figures from their scripts so pushed SVGs match.
+python3 assets/mims/render-figures.py || true
+
 # Stage everything (CLAUDE.md and .DS_Store are gitignored, so they stay out).
 git add -A
 

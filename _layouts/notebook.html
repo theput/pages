@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}{% if page.project %} — {{ page.project }}{% endif %}</title>
+  {% if page.summary %}<meta name="description" content="{{ page.summary }}">{% endif %}
+  <link rel="stylesheet" href="{{ '/assets/mims/mims.css' | relative_url }}">
+</head>
+<body>
+  <article class="sheet">
+    <div class="nb-head">
+      <span><a href="{{ '/lab/' | relative_url }}">LAB NOTES</a>{% if page.project %} / {{ page.project }}{% endif %}</span>
+      <span>{% if page.date %}{{ page.date | date: "%-d %b %Y" }}{% endif %}{% if page.callsign %} &middot; {{ page.callsign }}{% endif %}</span>
+    </div>
+
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+
+    {% if page.previous_note or page.next_note %}
+    <div class="nb-nav">
+      <span>{% if page.previous_note %}<a href="{{ page.previous_note | relative_url }}">&larr; PREVIOUS</a>{% endif %}</span>
+      <span>{% if page.next_note %}<a href="{{ page.next_note | relative_url }}">NEXT &rarr;</a>{% endif %}</span>
+    </div>
+    {% endif %}
+
+    {% if page.page %}<div class="pageno">{{ page.page }}</div>{% endif %}
+  </article>
+</body>
+</html>
