@@ -6,6 +6,7 @@ date: 2026-10-21
 page: 2
 summary: How the RockMite's crystal and a pair of diodes do the T/R switching, from my notebook of 20 Oct.
 previous_note: /lab/rockmite-40m/pa-lpf.html
+next_note: /lab/rockmite-40m/rockmite-10.html
 ---
 
 From my notebook, 20 Oct. Page 1 of five; the L-network math is the next page.
