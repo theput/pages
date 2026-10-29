@@ -1,10 +1,10 @@
 ---
 layout: notebook
-title: coupon-10 — the RX front end on the bench
+title: coupon-10 — the RX front end on the bench (lab report)
 project: RockMite 40m
-date: 2026-10-27
+date: 2026-10-28
 page: 4
-summary: A test board with two copies of the RockMite's input network, and what a NanoVNA sees when a crystal is asked to be an inductor.
+summary: Lab report. A test board with two copies of the RockMite's input network; what a NanoVNA sees when a crystal is asked to be an inductor, and what C1 and C2 actually do.
 previous_note: /lab/rockmite-40m/rockmite-10.html
 ---
 
@@ -59,5 +59,53 @@ The level barely moves; the frequency moves 600 Hz — more than one passband. C
 The 7.030 crystal that goes in the real board: peak 7.028 25 MHz, −41.2 dB, the same 1.7 kHz below its marking as the 7.040. Consistent batch.
 
 What the probe cannot show: the crystal's parallel resonance, a few kilohertz up. Off resonance the crystal is only its holder capacitance, and after the pickoff's 47 dB the far skirts are below the analyzer's noise. For that, the crystal goes straight between the two ports with nothing else — a different jig, another day.
+
+## Coupon A: the real input, 28 October
+
+Coupon A is the circuit as K1SWL drew it: C1 in series, a pair of 1N914s back to back as the clamp (0.554 and 0.556 V on the meter — a matched pair out of a pharmacy vial), the 7.030 crystal, C2 to ground, 1.3 k standing in for the mixer. The sweeps from here on were taken by a small command-line tool talking to the NanoVNA over USB, so every curve below is a file, not a photograph of a screen.
+{: .margin}
+
+First, the same discipline as B — resistors only, with the crystal jumpered and no C2:
+
+![Coupon A, resistors and C1 only, 1 to 20 MHz](figures/coupon-A-m0-probe.png)
+
+The 47 pF in series makes a high-pass with its knee near 2.6 MHz, so this one is not flat: −56 dB at 1 MHz climbing to −49.3 at 7 MHz and level from there. On the analyzer's own 10 dB per division screen it looked flat; a 12 dB window shows the shape. **−49.3 dB at 7.03 MHz is coupon A's reference.**
+{: .margin}
+
+Then the stock RockMite values, C1 = C2 = 47 pF:
+
+![Coupon A baseline, 7.026 to 7.032 MHz](figures/coupon-A-baseline.png)
+
+Peak **7.029 3 MHz, −42.3 dB, 735 Hz wide**, 7 dB above the resistors-only line. That is the RockMite's receive passband with this crystal: 7.0290 to 7.0298 MHz. Notice the skirts are not symmetric — the low side falls more slowly than the high side, because the crystal's parallel resonance sits just above and steepens that edge.
+{: .margin}
+
+Does the extra hardware cost anything? Coupon B with the same crystal and 82 pF read −41.2 on a probe that sits 0.8 dB higher than A's, and the 82 → 47 pF change costs about 0.4 dB. Put those together and a lossless C1-plus-clamp would read −42.4. It read −42.3. **C1 and the diodes cost nothing measurable.** The diodes are not conducting at this level and C1 is not eating signal — what it is doing is something else.
+
+## What C1 does
+
+Three values of C1, everything else fixed:
+
+![Coupon A, C1 = 22, 47 and 100 pF](figures/coupon-A-c1.png)
+
+| C1 | peak | level | −3 dB width |
+|---|---|---|---|
+| 22 pF | 7.029 84 MHz | −45.7 dB | 810 Hz |
+| 47 pF (stock) | 7.029 32 | −42.3 | 735 |
+| 100 pF | 7.029 01 | −41.0 | 713 |
+
+C1 is doing two jobs with one part. It sits between the 50 Ω source and the crystal, so its reactance (−j1030 Ω at 22 pF, −j484 at 47, −j227 at 100) is in the way of the match: smaller C1, more of the source voltage dropped across the capacitor, less reaching the crystal — 4.7 dB across the range. And the crystal sees that same series capacitance as part of its own motional arm, so it also pulls the resonance: smaller C1, higher peak — 830 Hz across the range. The stock 47 pF is a compromise between a few hundred hertz of upward pull and about a decibel of sensitivity. 100 pF buys 1.3 dB and moves the passband down 350 Hz. Now it is a choice rather than a value copied from the kit.
+{: .margin}
+
+## What the board answered
+
+- The crystal is the inductor of an L-match, and it only is one in a window a few kilohertz wide above its series resonance. Coupon B showed that with a coil first, then with the crystal.
+- The match's voltage gain at the mixer node is real: about 8 dB over a plain connection, 13.6 dB over a 50 Ω termination. It adds no power; it trades current for voltage, and the SA602 input is a voltage port.
+- The receive passband is about 500–750 Hz wide and there is no other filter in the receiver.
+- C2 moves the passband about 9 Hz per picofarad and barely changes the level: it is where the receiver listens, not how well.
+- C1 pulls the passband up and costs sensitivity as it gets smaller; the stock value trades about a decibel for a few hundred hertz.
+- The 1N914 clamp is invisible at receive levels.
+- Two crystals from the same batch sit 1.7 kHz below their markings, and within a few hundred hertz of each other.
+
+Still to do: drive the clamp hard enough to see it conduct, and find the crystal's parallel resonance on a jig with no probe loss.
 
 \* Coil values in the figure are the ones measured here: 10 µH Bourns 78F, 122 pF marked 120.
