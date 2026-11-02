@@ -6,6 +6,7 @@ date: 2026-10-28
 page: 4
 summary: Lab report. A test board with two copies of the RockMite's input network; what a NanoVNA sees when a crystal is asked to be an inductor, and what C1 and C2 actually do.
 previous_note: /lab/rockmite-40m/rockmite-10.html
+next_note: /lab/rockmite-40m/bring-up-10.html
 ---
 
 If you scanned the label on a board to get here: this is **coupon-10**, two test circuits on one blank.

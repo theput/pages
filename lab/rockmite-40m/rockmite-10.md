@@ -43,4 +43,6 @@ Board one came off the machine with the right-hand third barely scratched — Au
 | Drill | 0.8 mm bit, helical for anything larger |
 | Cut | 2026-10-26, about 21 minutes of isolation plus the drill cycle |
 
-Next: stuff it, bring it up stage by stage. The input stage got its own test board first — that's the next page.
+Next: stuff it, bring it up stage by stage. The input stage got its own test board first — that's the next page. The bring-up itself — oscillator, audio, receiver — is [page 5](bring-up-10.html).
+
+**Status, 1 November:** stages 1–4 built and measured; the receiver hears the band. Two bodge wires on the +12 V rail and one for a capacitor the board never had (C3, oscillator → mixer). Transmitter next.

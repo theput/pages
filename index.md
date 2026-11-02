@@ -19,7 +19,7 @@ once GitHub Pages is enabled.
   pages: quad paper, hand lettering, figures on the grid. First page:
   [RockMite 40m — PA + low pass filter](lab/rockmite-40m/pa-lpf). Board pages
   (what a board label points to): [rockmite-10](lab/rockmite-40m/rockmite-10),
-  [coupon-10](lab/rockmite-40m/coupon-10).
+  [coupon-10](lab/rockmite-40m/coupon-10). Latest: [rockmite-10 bring-up](lab/rockmite-40m/bring-up-10) — the receiver hears.
 
 ## Inventory
 
